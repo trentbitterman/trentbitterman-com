@@ -2,5 +2,5 @@ import React from "react"
 import Header from "../components/header"
 
 export default function Home() {
-  return <Header headerText="Welcome to Trent's Site!"></Header>
+  return <Header headerText="Welcome to Trent's Site!" />
 }

@@ -1,11 +1,16 @@
 import React from "react"
-import renderer from "react-test-renderer"
+import { shallow } from "enzyme"
 
 import Header from "../header"
 
 describe("Header", () => {
-  it("renders correctly", () => {
-    const tree = renderer.create(<Header headerText="Test Text" />).toJSON()
-    expect(tree).toMatchSnapshot()
+  it("displays the given text", () => {
+    const header = shallow(<Header headerText="Test text" />)
+    expect(header.text()).toEqual("Test text")
+  })
+
+  it("uses an h1 tag", () => {
+    const header = shallow(<Header headerText="Another test" />)
+    expect(header.html()).toContain("<h1>")
   })
 })
