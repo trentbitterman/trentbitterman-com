@@ -10,7 +10,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "gatsby": "^2.22.15",
@@ -25,11 +25,15 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
+    "pre-commit": "^1.2.2",
     "prettier": "2.0.5",
     "react-test-renderer": "^16.13.1"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "pre-commit": {
+    "run": ["test", "format"]
   },
   "repository": {
     "type": "git",
