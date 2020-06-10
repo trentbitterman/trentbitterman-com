@@ -15,8 +15,10 @@
   "dependencies": {
     "gatsby": "^2.22.15",
     "gatsby-plugin-manifest": "^2.4.10",
+    "gatsby-plugin-react-helmet": "^3.3.4",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "babel-jest": "^26.0.1",
@@ -33,7 +35,10 @@
     "extends": "react-app"
   },
   "pre-commit": {
-    "run": ["test", "format"]
+    "run": [
+      "test",
+      "format"
+    ]
   },
   "repository": {
     "type": "git",
