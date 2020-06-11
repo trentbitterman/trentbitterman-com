@@ -8,6 +8,7 @@ export default function Head(props) {
     <Helmet
       titleTemplate="%s | TrentBitterman.com"
       defaultTitle="TrentBitterman.com"
+      htmlAttributes={{ lang: "en" }}
     >
       <meta charSet="utf-8" />
       {pageTitle}
