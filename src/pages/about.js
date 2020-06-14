@@ -2,10 +2,11 @@ import React from "react"
 
 import Head from "../components/head"
 import Header from "../components/header"
+import Layout from "../components/layout"
 
 export default function About() {
   return (
-    <div>
+    <Layout>
       <Head
         title="About Me"
         link="https://trentbitterman.com/about"
@@ -16,6 +17,6 @@ export default function About() {
         I am a software developer in Northern Colorado. I enjoy running,
         reading, and movies of all sorts.
       </p>
-    </div>
+    </Layout>
   )
 }

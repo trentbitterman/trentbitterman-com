@@ -1,15 +1,17 @@
 import React from "react"
+
 import Header from "../components/header"
 import Head from "../components/head"
+import Layout from "../components/layout"
 
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <Head
         link="https://trentbitterman.com"
         description="Homepage of trentbitterman.com"
       />
       <Header headerText="Welcome to Trent's Site!" />
-    </div>
+    </Layout>
   )
 }
