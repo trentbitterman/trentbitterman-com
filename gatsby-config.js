@@ -19,6 +19,7 @@ module.exports = {
         icon: `static/favicon.svg`,
       },
     },
-    { resolve: `gatsby-plugin-react-helmet` },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`,
   ],
 }
