@@ -13,7 +13,7 @@ module.exports = {
         name: `Trent Bitterman's Site`,
         short_name: `Trent's Site`,
         start_url: `/`,
-        background_color: `#D9E1E2`,
+        background_color: `#f3f4f4`,
         theme_color: `#0076A5`,
         display: `browser`,
         icon: `static/favicon.svg`,
@@ -21,5 +21,11 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ],
 }
