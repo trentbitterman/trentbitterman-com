@@ -12,6 +12,7 @@ export default function Home() {
         description="Homepage of trentbitterman.com"
       />
       <Header headerText="Welcome to Trent's Site!" />
+      <a rel="me" href="https://mastodon.social/@trentbitterman"></a>
     </Layout>
   )
 }
